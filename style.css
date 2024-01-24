@@ -1,0 +1,158 @@
+body {
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab, #4c86f7, #c76df5,#000);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial,sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: gradient 20s ease infinite,fadeIn 2s ease;
+    font-size: 16px;
+    z-index: 100;
+}
+label {
+    display: block; 
+    margin-top: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+#txt {
+    margin-top: 10px;
+    font-size: 16px;  
+    border-radius: 8px; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: #333;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+    color: #ddd;
+    text-transform:uppercase;
+    text-shadow: 0 0 10px rgba(255 255 255 10);
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#fontSelector {
+    margin-top: 10px;
+    justify-content: end;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: rgba(255,255,255, 0.5);
+    color: #333;
+}
+#fontContainer{
+    justify-content: end;
+}
+.menu{
+    position: absolute;
+    top:92px;
+    left: 70px;
+}
+#formatButtons {
+    margin-top: 168px;
+    display: flex;
+    justify-content:flex-start;
+    position:absolute;
+    right: 27px;
+    text-align: right;
+    padding: 5px;
+    font-size: 16px;
+    flex-direction:row;
+    gap: 10px;
+    text-align: center;
+}
+
+#boldButton,
+#italicButton,
+#sizeButton{
+    margin-left: 10px;
+    cursor: pointer;
+}
+#sizeButton {
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  #sizeButton img {
+    width: 20px;
+    height: 20px;
+    margin-right: -9px;
+    ;
+  }
+#result {
+    margin-top: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+.button{
+    top:27vh;
+    right: 145px;
+    padding: 8px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #ddd;
+}
+.colorPicker{
+    align-items: end;
+    margin-left: 10px;
+}
+.shape {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: moveShape 5s ease-in-out infinite alternate;
+}
+*{
+    box-sizing: border-box;
+    margin: o;
+    padding: 0;
+}
+#bg{
+    position: absolute;
+    top: 0;
+    bottom: o;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
